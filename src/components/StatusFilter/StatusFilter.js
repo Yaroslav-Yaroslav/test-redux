@@ -5,8 +5,10 @@ import { useSelector, useDispatch } from 'react-redux';
 // Імпортуємо об'єкт значень фільтра
 import { statusFilters } from '../../redux/constants';
 import { getStatusFilter } from 'redux/selectors';
+import { setStatusFilter } from 'redux/filtersSlice';
 // Імпортуємо генератор екшену
-import { setStatusFilter } from "../../redux/actions";
+// import { setStatusFilter } from "../../redux/actions";
+
 
 export const StatusFilter = () => {
   const dispatch = useDispatch();
